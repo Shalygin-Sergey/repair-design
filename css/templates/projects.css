@@ -1,0 +1,16 @@
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem;
+    color: #fff; }
+
+.swiper-pagination-bullet {
+  background-color: #fff; }
