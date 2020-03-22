@@ -32,4 +32,39 @@ $(document).ready(function () {
 
     new WOW().init();
 
+    // Валидация формы
+    $('.modal__form').validate({
+        errorClass: "invalid",
+        rules: {
+            // Простое строчное правило {required:true}
+            userName: {
+                required: true,
+                minlength: 3,
+                maxlength: 15
+            },
+            userPhone: "required",
+            // правило объект (блок)
+            userEmail: {
+                required: true,
+                email: true
+            }
+        }, // сообщения
+        messages: {
+            userName: {
+                required: "Имя обязательно",
+                minlength: "Имя не короче трех букв",
+                maxlength: "Пожалуйста, не больше 15 букв"
+            },
+            userPhone: "Телефон обязателен",
+            userEmail: {
+                required: "Обязательно укажите email",
+                email: "Введите в формате: name@domain.com"
+            }
+        }
+    });
+
+    // маска для номера телефона
+    $('[type=tel]').mask('+7(000)-000-00-00', {
+        placeholder: "+7 (___)-___-__-__"
+    });
 });
