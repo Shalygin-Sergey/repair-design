@@ -801,6 +801,8 @@ img {
     padding: 4.285rem 0; }
   .footer__map {
     margin-bottom: 4rem; }
+    .footer__map--container {
+      max-width: 900px; }
 
 .modal {
   opacity: 0;
