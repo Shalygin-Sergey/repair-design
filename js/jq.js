@@ -60,6 +60,19 @@ $(document).ready(function () {
                 required: "Обязательно укажите email",
                 email: "Введите в формате: name@domain.com"
             }
+        },
+        submitHandler: function (form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    console.log('Ajax сработал, ответ сервера: ' + response);
+                    alert('Форма отправлена, мы вам перезвоним');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                }
+            });
         }
     });
 
