@@ -755,6 +755,74 @@ img {
   .design__section-title {
     margin-bottom: 2.78rem; }
 
+.team {
+  padding-bottom: 30rem; }
+  .team__section-title {
+    margin-bottom: 2.78rem; }
+  .team__section-subtitle {
+    width: 740px;
+    height: 60px;
+    font-family: 'Futura Book', cursive;
+    font-size: 1.42rem;
+    line-height: 1.92rem;
+    text-transform: none;
+    margin: 1.7rem auto;
+    color: #363636; }
+    .team__section-subtitle::before {
+      content: '';
+      width: 20rem;
+      height: 3rem;
+      background-color: black; }
+
+.people__text {
+  position: relative;
+  max-width: 17rem;
+  max-height: 10rem;
+  text-align: center;
+  margin: 1.3rem;
+  padding: 1.79rem 2.14rem;
+  margin-top: -6.3rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.people__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem;
+  margin-top: 0;
+  margin-bottom: 0.7rem; }
+
+.people__preimg {
+  width: 5rem;
+  height: 5rem;
+  background: #E3B873;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 27rem;
+  right: 6rem; }
+
+.people__list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595;
+  margin-bottom: 2.5rem; }
+
+.people__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+  font-size: 0.93rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1.214rem 3.4rem; }
+
+.people__item {
+  list-style-type: none; }
+
 .footer {
   background: #131313 url("../img/footer-bg.webp") no-repeat center/cover;
   padding-top: 3rem;
