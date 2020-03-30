@@ -1,22 +1,47 @@
 .team
-    padding-bottom: 30rem
+    padding-bottom: 20rem
     &__section-title
         margin-bottom: 2.78rem
+
     &__section-subtitle
-        width: 740px
-        height: 60px
+        width: 32rem
+        height: 4.28rem
         font-family: 'Futura Book', cursive
         font-size: 1.42rem
         line-height: 1.92rem
         text-transform: none
         margin: 1.7rem auto
         color: #363636
-        &::before
+        
+    &__section-subtitle2
+        width: 40.57rem
+        height: 9.85rem
+        font-family: 'Futura Book', cursive
+        font-size: 1.42rem
+        line-height: 1.92rem
+        text-transform: none
+        margin: 1.7rem auto
+        color: #363636
+       
+       
+            
+    &__double
+        display: flex
+        flex-wrap: wrap
+        width: 60px
+        height: 2px
+        margin: 0
+        padding: 0
+        margin: 3rem auto
+        &::before, &::after
+            display: flex
+            justify-content: center
             content: ''
-            width: 20rem
-            height: 3rem
-            background-color: black
-
+            background-color: $primary
+            width: 60px
+            height: 2px
+            margin-bottom: 2rem
+   
 .people
     &__text
         position: relative
@@ -42,6 +67,8 @@
         justify-content: center
         bottom: 27rem
         right: 6rem
+        &:hover
+            box-shadow: 3px 3px 3px 3px rgba($primary, 0.3)
     &__list
         padding: 0 0 0 1rem
         margin: 0
